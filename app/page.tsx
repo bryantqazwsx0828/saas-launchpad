@@ -13,8 +13,8 @@ import { Footer } from '@/components/landing/footer';
 export default function HomePage() {
   return (
     <main className="min-h-screen bg-slate-950 text-white">
+      <Header />
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <Header />
         <Hero />
         <LogoCloud />
         <Features />
