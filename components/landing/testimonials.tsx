@@ -5,8 +5,8 @@ export function Testimonials() {
     <section className="py-24">
       <div className="container-shell">
         <div className="mx-auto max-w-2xl text-center">
-          <div className="chip mx-auto border-violet-400/20 bg-violet-500/10 text-violet-100">Customer stories</div>
-          <h2 className="section-title mt-6">Teams move faster when the signal is clear.</h2>
+          <div className="chip mx-auto border-violet-400/20 bg-violet-500/10 text-violet-100">Client feedback</div>
+          <h2 className="section-title mt-6">Work that makes founders feel more confident.</h2>
         </div>
 
         <div className="mt-16 grid gap-6 lg:grid-cols-3">

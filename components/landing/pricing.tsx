@@ -6,10 +6,10 @@ export function Pricing() {
     <section id="pricing" className="py-24">
       <div className="container-shell">
         <div className="mx-auto max-w-2xl text-center">
-          <div className="chip mx-auto border-violet-400/20 bg-violet-500/10 text-violet-100">Pricing</div>
-          <h2 className="section-title mt-6">Simple pricing for operating at scale.</h2>
+          <div className="chip mx-auto border-violet-400/20 bg-violet-500/10 text-violet-100">Packages</div>
+          <h2 className="section-title mt-6">Choose the level that fits your stage.</h2>
           <p className="section-copy mx-auto">
-            Start lean, move quickly, and upgrade when your pipeline and team complexity grow.
+            Whether you're validating a new idea or scaling a bigger SaaS story, there’s a package built to support momentum.
           </p>
         </div>
 
@@ -31,7 +31,7 @@ export function Pricing() {
               <div className="text-xl font-semibold text-white">{plan.name}</div>
               <div className="mt-4 flex items-end gap-2">
                 <span className="text-4xl font-bold text-white">{plan.price}</span>
-                {plan.price !== 'Custom' && <span className="pb-1 text-slate-300">/month</span>}
+                {plan.price !== 'Custom' && <span className="pb-1 text-slate-300">USD</span>}
               </div>
               <p className="mt-4 text-sm leading-6 text-slate-300">{plan.description}</p>
 
@@ -47,14 +47,14 @@ export function Pricing() {
               </ul>
 
               <Link
-                href="#"
+                href="/contact"
                 className={`mt-8 inline-flex w-full justify-center rounded-full px-4 py-3 text-sm font-semibold transition ${
                   plan.popular
                     ? 'bg-violet-500 text-white hover:bg-violet-400'
                     : 'border border-white/10 bg-white/5 text-slate-100 hover:bg-white/10'
                 }`}
               >
-                {plan.price === 'Custom' ? 'Talk to sales' : 'Get started'}
+                {plan.price === '$5k+' ? 'Request quote' : 'Get started'}
               </Link>
             </div>
           ))}

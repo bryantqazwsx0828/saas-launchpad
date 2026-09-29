@@ -5,7 +5,7 @@ export function LogoCloud() {
     <section className="py-10">
       <div className="container-shell">
         <p className="text-center text-xs font-semibold uppercase tracking-[0.25em] text-slate-400">
-          Trusted by modern revenue teams
+          Helping product teams turn complexity into clarity
         </p>
         <div className="mt-8 grid grid-cols-2 gap-6 text-center sm:grid-cols-3 lg:grid-cols-6">
           {siteConfig.trust.map((brand) => (

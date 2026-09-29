@@ -1,133 +1,162 @@
 export const siteConfig = {
-  name: 'Northstar',
-  headline: 'Turn fragmented growth into a single operating system.',
+  name: 'Bryant Studio',
+  headline: 'I design and build SaaS websites that help startups get traction faster.',
   subheadline:
-    'Northstar helps B2B teams launch faster, align revenue teams, and close more pipeline with real-time execution insights.',
-  navLinks: ['Product', 'Solutions', 'Pricing', 'Resources'],
-  ctaPrimary: 'Book a demo',
-  ctaSecondary: 'See how it works',
-  logoText: 'Northstar',
-  trust: ['Notion', 'Stripe', 'HubSpot', 'Slack', 'Linear', 'Intercom'],
+    'I help early-stage founders and B2B SaaS teams turn product complexity into clear messaging, better conversion, and a website that sells.',
+  navLinks: ['Services', 'Case Study', 'Process', 'Contact'],
+  ctaPrimary: 'Book a call',
+  ctaSecondary: 'See my work',
+  logoText: 'Bryant Studio',
+  trust: ['SaaS', 'B2B', 'Startups', 'Product', 'UX', 'Growth'],
 };
 
-export const featureData = [
+export const serviceData = [
   {
-    title: 'Unified GTM dashboard',
-    text: 'Bring marketing, sales, and product signals into one clean workspace for better company-wide execution.',
-    tag: 'AI Insights',
+    title: 'SaaS Brand Positioning',
+    text: 'Clarify the core value proposition, sharpen positioning, and make your product easier to understand in under a week.',
+    tag: 'Strategy',
   },
   {
-    title: 'Pipeline forecast engine',
-    text: 'Predict revenue outcomes with account-level views, deal momentum, and risk detection before it slips.',
-    tag: 'Revenue Ops',
+    title: 'Landing Page Design',
+    text: 'Design clean, persuasive pages that communicate value clearly and convert visitors into demo requests.',
+    tag: 'UX/UI',
   },
   {
-    title: 'Workflow automation',
-    text: 'Automate handoffs, approvals, and follow-ups while your team stays focused on customer outcomes.',
-    tag: 'Automation',
+    title: 'Frontend Development',
+    text: 'Build polished, responsive, production-ready Next.js pages that feel premium and perform smoothly.',
+    tag: 'Code',
   },
   {
-    title: 'Custom reporting',
-    text: 'Create executive-ready dashboards with the metrics your board and teams actually care about.',
-    tag: 'Analytics',
+    title: 'Product Messaging',
+    text: 'Turn technical features into benefits that resonate with founders, operators, and buyers in the market.',
+    tag: 'Messaging',
   },
   {
-    title: 'Customer health scoring',
-    text: 'Track expansion opportunities, churn risk, and sentiment in one place across every segment.',
-    tag: 'Lifecycle',
+    title: 'Conversion Optimization',
+    text: 'Improve the structure, hierarchy, and calls to action so more traffic becomes qualified opportunities.',
+    tag: 'Growth',
   },
   {
-    title: 'Enterprise security',
-    text: 'Protect every workflow with audit logs, role-based access, and secure-by-default infrastructure.',
-    tag: 'Security',
+    title: 'Design Systems',
+    text: 'Create reusable UI blocks and patterns that keep future product pages consistent and fast to scale.',
+    tag: 'Systems',
   },
 ];
 
-export const workflowSteps = [
+export const caseStudies = [
+  {
+    name: 'Northstar',
+    category: 'B2B SaaS growth platform',
+    result: '+41% demo conversion within 8 weeks',
+    summary:
+      'Rebuilt the offering narrative, redesigned page structure, and simplified the CTA flow to make the product easier to understand and easier to buy.',
+  },
+  {
+    name: 'FlowPilot',
+    category: 'Workflow automation',
+    result: '2x increase in trial signups',
+    summary:
+      'Refined the product story and created a more confident positioning system that made critical values much easier to communicate.',
+  },
+  {
+    name: 'SignalOps',
+    category: 'Revenue intelligence',
+    result: '3-week launch from brief to live',
+    summary:
+      'Delivered a high-impact marketing site built for startup traction, with a focus on clarity, trust, and conversion flow.',
+  },
+];
+
+export const processSteps = [
   {
     id: '01',
-    title: 'Connect your stack',
-    text: 'Sync CRM, product data, and customer signals in under 10 minutes.',
+    title: 'Discovery',
+    text: 'We align on audience, offer, positioning, and the specific business outcome the website needs to support.',
   },
   {
     id: '02',
-    title: 'Map your plays',
-    text: 'Define the workflows, alerts, and team ownership around each revenue motion.',
+    title: 'Strategy',
+    text: 'I map the user journey and sharpen the messaging so the page tells the right story in the right order.',
   },
   {
     id: '03',
-    title: 'Scale with intelligence',
-    text: 'Use AI recommendations and shared dashboards to adapt when conditions change.',
+    title: 'Design',
+    text: 'I craft a premium interface focused on clarity, trust, and conversion without clutter or fluff.',
+  },
+  {
+    id: '04',
+    title: 'Build',
+    text: 'I turn the design into a responsive, production-ready website with smooth performance and scalable structure.',
   },
 ];
 
 export const metricsData = [
-  { value: '4.8x', label: 'Faster campaign launches' },
-  { value: '31%', label: 'Pipeline lift' },
-  { value: '12 hrs', label: 'Saved per rep each week' },
-  { value: '99.9%', label: 'Platform uptime' },
+  { value: '3-6', label: 'weeks typical delivery' },
+  { value: '41%', label: 'average conversion lift' },
+  { value: '18+', label: 'product and landing page projects' },
+  { value: '100%', label: 'custom, founder-first approach' },
 ];
 
 export const testimonialData = [
   {
-    name: 'Alicia Morgan',
-    title: 'VP of Growth, VantaFlow',
+    name: 'Maya Chen',
+    title: 'Founder, Northstar',
     quote:
-      'Northstar gave our GTM leaders a single source of truth. We launched campaigns faster and stopped guessing on what was working.',
+      'Bryant brought clarity to our website in a way our previous designer never did. The messaging finally matched the product.',
   },
   {
-    name: 'Daniel Liu',
-    title: 'COO, Orbit Labs',
+    name: 'David Price',
+    title: 'Head of Growth, FlowPilot',
     quote:
-      'The dashboard clarity alone improved weekly team decisions. It feels built for scaling software companies that need signal, not spreadsheets.',
+      'We launched faster, looked more credible, and immediately saw stronger response from demo requests after the redesign.',
   },
   {
-    name: 'Sofia Patel',
-    title: 'CEO, Signal Arc',
+    name: 'Anita Gomez',
+    title: 'CEO, SignalOps',
     quote:
-      'We replaced three tools with one platform and saw revenue team alignment improve within the first month.',
+      'The site not only looks premium—it communicates value in a way our buyers instantly understand.',
   },
 ];
 
 export const pricingPlans = [
   {
-    name: 'Starter',
-    price: '$29',
-    description: 'Perfect for early-stage teams validating their GTM motion.',
-    features: ['Unlimited projects', 'Dashboard widgets', 'Slack alerts', 'Email support'],
+    name: 'Starter Sprint',
+    price: '$1,200',
+    description: 'Ideal for founders validating a new offer or product.',
+    features: ['Messaging review', '1 landing page design', 'Responsive frontend build', 'Launch support'],
     popular: false,
   },
   {
-    name: 'Growth',
-    price: '$99',
-    description: 'Built for scaling startups that need visibility across the funnel.',
-    features: ['Everything in Starter', 'AI forecasting', 'Custom reports', 'Priority support'],
+    name: 'Growth Build',
+    price: '$2,800',
+    description: 'Best for teams that need a polished SaaS presence with higher conversion focus.',
+    features: ['Everything in Starter', 'Multi-section homepage', 'Conversion-focused layout', 'Priority iteration'],
     popular: true,
   },
   {
-    name: 'Enterprise',
-    price: 'Custom',
-    description: 'Advanced controls for multi-team and global sales organizations.',
-    features: ['SSO + audit logs', 'Dedicated onboarding', 'Custom API access', 'Executive dashboards'],
+    name: 'Custom Product Site',
+    price: '$5k+',
+    description: 'Full website system for startups ready to scale brand and funnel performance.',
+    features: ['Custom strategy', 'Multi-page UX', 'Design system', 'Ongoing support'],
     popular: false,
   },
 ];
 
 export const faqs = [
   {
-    question: 'How fast can we get started?',
-    answer: 'Most teams are live in under two weeks with standard CRM and product integrations.',
+    question: 'Do you work with early-stage startups?',
+    answer: 'Yes. I often work with founders and small teams who need a sharper message and a website that helps them look credible fast.',
   },
   {
-    question: 'Does it work for B2B SaaS companies?',
-    answer: 'Yes. The platform is designed around pipeline management, retention intelligence, and sales execution for software companies.',
+    question: 'Can you build the full site in code?',
+    answer: 'Yes. I design and build production-ready pages, usually using Next.js and modern frontend patterns that are easy to scale.',
   },
   {
-    question: 'Can we white-label this for clients?',
-    answer: 'Absolutely. The layout and content model are modular so you can adapt branding, messaging, and product positioning quickly.',
+    question: 'What is the typical timeline?',
+    answer: 'Most projects take between 2 and 6 weeks depending on scope, requirements, and how much content or iteration is involved.',
   },
   {
-    question: 'Is support included?',
-    answer: 'Growth and Enterprise plans include onboarding and priority support to help your team move quickly.',
+    question: 'Do you also help with messaging?',
+    answer: 'Absolutely. Messaging and design are part of the same conversion strategy, and I often help clients clarify the offer before building the page.',
   },
 ];

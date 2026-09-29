@@ -7,7 +7,7 @@ export function Faq() {
         <div className="mx-auto max-w-3xl">
           <div className="text-center">
             <div className="chip mx-auto border-violet-400/20 bg-violet-500/10 text-violet-100">FAQ</div>
-            <h2 className="section-title mt-6">Questions teams ask before they switch.</h2>
+            <h2 className="section-title mt-6">Questions before we start.</h2>
           </div>
 
           <div className="mt-12 space-y-4">
