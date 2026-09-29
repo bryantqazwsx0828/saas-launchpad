@@ -5,6 +5,7 @@ const navLinks = [
   { label: 'Services', href: '/services' },
   { label: 'Case Study', href: '/case-study' },
   { label: 'Process', href: '/process' },
+  { label: 'About', href: '/about' },
   { label: 'Contact', href: '/contact' },
 ];
 
@@ -29,7 +30,7 @@ export function Header() {
 
         <div className="flex items-center gap-3">
           <Link href="/contact" className="rounded-full bg-violet-500 px-4 py-2 text-sm font-medium text-white shadow-lg shadow-violet-500/20 transition hover:bg-violet-400">
-            Book a call
+            Book a project
           </Link>
         </div>
       </div>

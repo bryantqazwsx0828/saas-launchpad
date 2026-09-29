@@ -1,17 +1,34 @@
 import Link from 'next/link';
-import { ArrowRight, CheckCircle2, BriefcaseBusiness, ChartColumnBig, LockKeyhole } from 'lucide-react';
+import { ArrowRight, BadgeCheck, BriefcaseBusiness, Compass, Gauge, Layers3 } from 'lucide-react';
 
 const valueStats = [
-  { value: '4.8x', label: 'Faster growth cycles' },
-  { value: '31%', label: 'Pipeline lift in 90 days' },
-  { value: '99.9%', label: 'System uptime' },
+  { value: '3-6', label: 'week average delivery' },
+  { value: '41%', label: 'average conversion lift' },
+  { value: '100%', label: 'custom founder-led process' },
 ];
 
-const benefits = [
-  'Unified dashboards for every team',
-  'Live revenue forecasting with zero spreadsheet dependency',
-  'A shared operating model for GTM execution',
-  'Built for lean teams and scaling startups',
+const strengths = [
+  {
+    icon: Compass,
+    title: 'Positioning-first thinking',
+    text: 'I start by clarifying what makes your product worth paying for and how to say it clearly.',
+  },
+  {
+    icon: Layers3,
+    title: 'UI systems that scale',
+    text: 'I create structured, reusable interfaces that are strong enough for product growth and clean enough to trust.',
+  },
+  {
+    icon: Gauge,
+    title: 'Conversion-focused design',
+    text: 'Every page is designed to help the right visitors understand the value and take action with confidence.',
+  },
+];
+
+const notes = [
+  'Focused on startup and SaaS product storytelling',
+  'Design + frontend build in one streamlined workflow',
+  'Built to support founder credibility, traction, and conversion',
 ];
 
 export default function AboutPage() {
@@ -21,17 +38,21 @@ export default function AboutPage() {
         <section className="rounded-[32px] border border-white/10 bg-slate-900/80 p-8 sm:p-12">
           <div className="grid gap-10 lg:grid-cols-[1.1fr_0.9fr] lg:items-center">
             <div>
-              <div className="chip border-violet-400/20 bg-violet-500/10 text-violet-100">About Northstar</div>
-              <h1 className="mt-6 text-4xl font-bold tracking-tight text-white sm:text-5xl">We help SaaS teams turn complexity into clarity.</h1>
+              <div className="chip border-violet-400/20 bg-violet-500/10 text-violet-100">About Bryant</div>
+              <h1 className="mt-6 text-4xl font-bold tracking-tight text-white sm:text-5xl">
+                I help SaaS founders look sharper, sell clearer, and launch faster.
+              </h1>
               <p className="mt-5 text-lg text-slate-300">
-                Northstar was built to give leadership and revenue teams a cleaner operating rhythm. We focus on execution, visibility, and measurable outcomes instead of tool sprawl and disconnected reporting.
+                I’m a designer and frontend developer focused on SaaS positioning, conversion-centered web design, and premium product experiences that feel credible from the first scroll.
               </p>
-              <div className="mt-8 flex gap-4">
-                <Link href="/contact" className="rounded-full bg-violet-500 px-6 py-3 text-sm font-semibold text-white hover:bg-violet-400">
-                  Talk to us
+
+              <div className="mt-8 flex flex-wrap gap-4">
+                <Link href="/contact" className="inline-flex items-center gap-2 rounded-full bg-violet-500 px-6 py-3 text-sm font-semibold text-white hover:bg-violet-400">
+                  Book a discovery call
+                  <ArrowRight className="h-4 w-4" />
                 </Link>
-                <Link href="/product" className="rounded-full border border-white/10 bg-white/5 px-6 py-3 text-sm font-semibold text-slate-100 hover:bg-white/10">
-                  Explore platform
+                <Link href="/case-study" className="rounded-full border border-white/10 bg-white/5 px-6 py-3 text-sm font-semibold text-slate-100 hover:bg-white/10">
+                  View work
                 </Link>
               </div>
             </div>
@@ -50,11 +71,7 @@ export default function AboutPage() {
         </section>
 
         <section className="mt-20 grid gap-6 lg:grid-cols-3">
-          {[
-            { icon: ChartColumnBig, title: 'Built for measurable growth', text: 'Every process is connected to a business outcome—not just a workflow event.' },
-            { icon: BriefcaseBusiness, title: 'Made for operators', text: 'We simplify the day-to-day planning and reporting burden for scaling SaaS teams.' },
-            { icon: LockKeyhole, title: 'Trust by default', text: 'Security, access controls, and governance are built into the foundation of the platform.' },
-          ].map(({ icon: Icon, title, text }) => (
+          {strengths.map(({ icon: Icon, title, text }) => (
             <div key={title} className="rounded-3xl border border-white/10 bg-slate-900/80 p-6">
               <div className="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-2xl bg-violet-500/15 text-violet-200">
                 <Icon className="h-5 w-5" />
@@ -67,22 +84,27 @@ export default function AboutPage() {
 
         <section className="mt-20 rounded-[32px] border border-white/10 bg-slate-900/80 p-8 sm:p-10">
           <div className="mb-8 text-center">
-            <p className="text-xs font-semibold uppercase tracking-[0.25em] text-slate-400">What matters</p>
-            <h2 className="mt-4 text-3xl font-bold text-white">The operating model behind sustainable SaaS growth.</h2>
+            <p className="text-xs font-semibold uppercase tracking-[0.25em] text-slate-400">Why work with me</p>
+            <h2 className="mt-4 text-3xl font-bold text-white">Focused, strategic, and built for product teams.</h2>
           </div>
+
           <div className="grid gap-6 lg:grid-cols-2">
             <div className="space-y-4">
-              {benefits.map((item) => (
+              {notes.map((item) => (
                 <div key={item} className="flex items-start gap-3 rounded-2xl border border-white/10 bg-slate-950 p-4">
-                  <CheckCircle2 className="mt-0.5 h-5 w-5 text-emerald-400" />
+                  <BadgeCheck className="mt-0.5 h-5 w-5 text-emerald-400" />
                   <span className="text-slate-200">{item}</span>
                 </div>
               ))}
             </div>
+
             <div className="rounded-3xl border border-violet-400/20 bg-gradient-to-br from-violet-500/10 via-slate-900 to-slate-950 p-6">
-              <div className="mb-4 text-sm font-medium uppercase tracking-[0.2em] text-violet-200">Mission</div>
+              <div className="mb-4 flex items-center gap-3 text-violet-200">
+                <BriefcaseBusiness className="h-5 w-5" />
+                <span className="text-sm font-medium uppercase tracking-[0.2em]">Approach</span>
+              </div>
               <p className="text-lg leading-8 text-slate-200">
-                To make it easier for growing companies to operate with visibility, speed, and confidence—without building a brittle stack of disconnected systems.
+                I blend product strategy, UX clarity, and high-quality frontend execution so your website doesn’t just look good — it helps the business move forward.
               </p>
             </div>
           </div>
